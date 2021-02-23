@@ -26,12 +26,12 @@
 		</div>
 		<div>
 		<label>Gender:</label>
-		<label>Male <input type="radio" name="radio_field" value="m"></label>
-		<label>Female <input type="radio" name="radio_field" value="f"></label>
+		<label>Male <input type="radio" name="gender_field" value="m" checked="checked"></label>
+		<label>Female <input type="radio" name="gender_field" value="f"></label>
 		</div>
 		<div>
-		  <select name="menu_field">
-		    <option value="U">Under 18</option>
+		  <select name="age_field">
+		    <option value="U" selected>Under 18</option>
 			<option value="18">18-24</option>
             <option value="25">25-34</option>
 			<option value="35">35-44</option>
@@ -50,18 +50,22 @@
 		<div>
 		<p>Days Available:</p>
 		</div>
-		<div><label><input type="checkbox" name="checkbox_field[]" value="sunday">Sunday</label></div>
-        <div><label><input type="checkbox" name="checkbox_field[]" value="monday">Monday</label></div>
-		<div><label><input type="checkbox" name="checkbox_field[]" value="tuesday">Tuesday</label></div>
-		<div><label><input type="checkbox" name="checkbox_field[]" value="wednesday">Wednesday</label></div>
-		<div><label><input type="checkbox" name="checkbox_field[]" value="thursday">Thursday</label></div>
-		<div><label><input type="checkbox" name="checkbox_field[]" value="friday">Friday</label></div>
-		<div><label><input type="checkbox" name="checkbox_field[]" value="saturday">Saturday</label></div>
+		<div><label><input type="checkbox" name="available_field[]" value="sunday">Sunday</label></div>
+        <div><label><input type="checkbox" name="available_field[]" value="monday">Monday</label></div>
+		<div><label><input type="checkbox" name="available_field[]" value="tuesday">Tuesday</label></div>
+		<div><label><input type="checkbox" name="available_field[]" value="wednesday">Wednesday</label></div>
+		<div><label><input type="checkbox" name="available_field[]" value="thursday">Thursday</label></div>
+		<div><label><input type="checkbox" name="available_field[]" value="friday">Friday</label></div>
+		<div><label><input type="checkbox" name="available_field[]" value="saturday" checked>Saturday</label></div>
 		</div>
 		<div>
 		<label for="our_textarea">Any Comments?</label>
-		  <div><textarea cols="30" rows="10" name="textarea_field" placeholder="Please type here" id="our_textarea"></textarea></div>
+		  <div><textarea cols="30" rows="10" name="comments_field" placeholder="Please type here" id="our_textarea"></textarea></div>
 		</div>
+		<div>
+		  <input type="hidden" name="hidden_field" value="Alex L">
+		</div>
+		<input type="submit" value="Send Me">
 	  </fieldset>
 	</form>
 	
