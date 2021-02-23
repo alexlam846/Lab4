@@ -9,7 +9,9 @@
     <h1>Volunteer Form</h1>
     <form method="Post" autocomplete="on" action="lab4formscript.php" enctype="multipart/form-data">
 	  <fieldset>
-	    <strong>My Info</strong>
+	    <div>
+		<strong>My Info</strong>
+		</div>
 	    <div>
 		<label>First Name: <input type="text" name="first_name_field" placeholder="first name"></label>
 		</div>
@@ -39,10 +41,13 @@
 		  </select>
 		</div>
 	  </fieldset>
+	  <div>
 	  <strong>My Availability</strong>
+	  </div>
 	  <fieldset>
 	    <div>
 		<p>Days Available:</p>
+		</div>
 		<div><label><input type="checkbox" name="checkbox_field[]" value="sunday">Sunday</label></div>
         <div><label><input type="checkbox" name="checkbox_field[]" value="monday">Monday</label></div>
 		<div><label><input type="checkbox" name="checkbox_field[]" value="tuesday">Tuesday</label></div>
